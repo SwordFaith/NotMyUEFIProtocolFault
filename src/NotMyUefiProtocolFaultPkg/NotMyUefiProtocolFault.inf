@@ -1,0 +1,17 @@
+[Defines]
+  INF_VERSION = 0x00010006
+  BASE_NAME   = NotMyUefiProtocolFault
+  FILE_GUID   = 10b15c58-3042-4ca4-b076-a69ce7416d92
+  MODULE_TYPE = UEFI_DRIVER
+  VERSION_STRING = 0.1
+  ENTRY_POINT = NotMyUefiProtocolFaultEntryPoint 
+
+[Sources]
+  NotMyUefiProtocolFault.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiDriverEntryPoint
